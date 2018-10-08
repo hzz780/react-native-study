@@ -8,10 +8,16 @@ import Touchable from './components/Touchable.js'
 import FlatListDemo from './components/FlatListDemo.js'
 import SectionListBasics from './components/SectionListBasics.js'
 import FetchDemo from './components/FetchDemo.js'
+import ImageDemo from './components/ImageDemo.js'
+import Animations from './components/Animations.js'
+
+// Components
+import ActivityIndicatorDemo from './components/ActivityIndicator.js'
+import DatePickerIOSDemo from './components/DatePickerIOSDemo.js'
 import styles from './App.style.js'
 
 // Demo 集合
-import SampleAppMovies from '../SampleAppMovies/SampleAppMovies';
+// import SampleAppMovies from '../SampleAppMovies/SampleAppMovies';
 
 // import { createStackNavigator } from 'react-navigation'; // Version can be specified in package.json
 
@@ -42,7 +48,12 @@ export default class HelloWorldApp extends Component {
         return (
             <ScrollView style={{ marginTop: 20 }}>
                 <Text>Hellow World Demo</Text>
-                <SampleAppMovies />
+
+                <ActivityIndicatorDemo />
+                <DatePickerIOSDemo />
+
+                <Animations />
+                <ImageDemo />
 
                 <ButtonBasics />
                 <Touchable />
